@@ -1,0 +1,174 @@
+<html>
+<head>
+	<title>
+		Html Form
+	</title>
+
+	<style>
+		body{
+			background: #e2e2e2;
+			color:black;
+
+		}
+		li
+		{
+			font-size: 35px;
+			color:blue;
+		}
+
+		.red-color{
+			color:red;
+			font-size: 40px;
+		}
+
+		#id-selector{
+			font-size: 50px;
+			color: green;
+		}
+
+		.heading{
+			font-size: 40px;
+			color:red;
+			text-align: center;
+			text-decoration: underline;
+		}
+
+		#register-form{
+			margin: auto;
+		}
+
+		#register-form tr td,input,select,textarea{
+			font-size: 30px;
+
+		}
+
+		#register-form input,select,textarea{
+			width: 100%;
+		}
+
+		#register-form{
+			border: 1px solid white;
+			padding:25px;
+			background: white;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1 class="heading">Form Learning</h1>
+
+	<form action="register.jsp" method="post">
+
+
+
+		<table id="register-form">
+			<tr>
+				<td>
+					Enter name :
+				</td>
+				<td>
+					<input type="text" placeholder="Enter here" name="user_name" value="Durgesh Tiwari" readonly>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+
+					Enter password :
+				</td>
+				<td>
+					<input type="password" placeholder="Enter here" name="dob">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Select DOB:
+				</td>
+				<td>
+				<input type="date" name="dob">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Select Gender
+				</td>
+
+				<td>
+					 <input type="radio" name="gender">Male 
+					 <input type="radio" name="gender"> Female
+				</td>
+			</tr>
+
+			<tr>
+				<td>Select course</td>
+				<td>
+					<select name="course" id="" size="3" multiple>
+						<option value="Java">Java Programming</option>
+						<option value="Php">Php Programming</option>
+						<option value="Python">Python Programming</option>
+						<option value="Android">Android Programming</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Enter Address:
+
+				</td>
+
+				<td>
+					<textarea placeholder="Enter address here" name="address" style="width: 100%;height: 100px;"></textarea>
+				</td>
+			</tr>
+
+			<tr>
+					<td style="text-align: right;">
+					<input type="checkbox">
+					</td>
+					<td>
+						Accept terms and conditions
+					</td>
+			</tr>
+
+			<tr>
+				<td>
+					
+				</td>
+
+				<td>
+					<input type="submit">
+					<input type="reset">
+				</td>
+			</tr>
+
+
+
+		</table>
+
+	</form>
+
+
+	<br>
+
+	<hr>
+	<h1>Selector...</h1>
+	<ul>
+		<li>Tag selector</li>
+		<li>Class selector</li>
+		<li>Class selector</li>
+		<li class="red-color">Class selector</li>
+		<li class="red-color">Class selector</li>
+		<li class="red-color">Class selector</li>
+		<li id="id-selector">Id selector</li>
+
+
+	</ul>
+
+
+
+</body>
+</html>
